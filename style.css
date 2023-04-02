@@ -27,7 +27,7 @@ button{
 /* HERO SECTION */
 .hero-section{
     border-bottom: 10px solid #2a2a2a;
-    background: linear-gradient(hsla(0, 0%, 7%, 0.747), rgba(28, 28, 28, 0.71)), url(./Images/logo.png);
+    background: linear-gradient(hsla(0, 0%, 7%, 0.747), rgba(28, 28, 28, 0.71)), url(./Images/hero.jpg);
     background-size: cover;
     height: 70vh;
     display: grid;
