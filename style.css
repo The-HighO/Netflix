@@ -1,0 +1,764 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Switzer', sans-serif;
+}
+:root{
+    --primary-red: #e50914;
+}
+::placeholder{
+    color: #c3c3c3;
+    font-size: 1rem;
+}
+.main{
+    height: auto;
+}
+a{
+    color: #ffffff;
+}
+button{
+    cursor: pointer;
+}
+.navA{
+    text-decoration: none;
+}
+/* HERO SECTION */
+.hero-section{
+    border-bottom: 10px solid #2a2a2a;
+    background: linear-gradient(hsla(0, 0%, 7%, 0.747), rgba(28, 28, 28, 0.71)), url(../Images/hero.jpg);
+    background-size: cover;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+    border-bottom: 10px solid #1e1e1e;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.logo{
+    width: 6rem;
+    aspect-ratio: 3/1;
+}
+.nav-btn{
+    background-color: var(--primary-red);
+    border: none;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: #ffffff;
+    border-radius: 0.25rem;
+}
+.hero-container{
+    /* background-color: #08080879; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-subContainer{
+    padding: 0.5rem;
+    width: 90%;
+    height: auto;
+    /* background-color: #87878746; */
+    color: white;
+}
+.hcH1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.hcH3, .hcH5{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.web-form{
+    margin-top: 1rem;
+    height: 9rem;
+    width: 100%;
+}
+.hero-form, .btn-cont{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#email{
+    padding-left: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1.5px solid grey;
+    color: white;
+    height: 100%;
+    width: 95%;
+    background-color: #1b1b1bb0;
+}
+.btn-cont{
+    margin-top: 0.5rem;
+}
+.hero-btn{
+    background-color: var(--primary-red);
+    height: 100%;
+    width: 10rem;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media only screen and (min-width:600px){
+    .hero-section{
+        height: 90vh;
+    }
+    .hero-subContainer{
+        height: auto;
+    }
+    .nav-bar{
+        padding: 1rem 2rem;
+    }
+    .hcH3, .hcH5{
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+    }
+    .web-form{
+        /* background-color: rgba(181, 255, 255, 0.653); */
+        display: flex;
+        height: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    #email{
+        width: 25rem;
+        height: 3.5rem;
+        max-width: 25rem;
+    }
+    .btn-cont, .hero-form{
+        width: auto;
+        margin-top: 0;
+    }
+    .hero-btn{
+        margin-left: 1rem;
+        height: 3.5rem;
+        width: 10rem;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:768px){
+    .hero-subContainer{
+        height: auto;
+    }
+    .hcH1{
+        font-size: 3rem;
+    }
+    .hcH3, .hcH5{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:950px){
+    .hero-section{
+        padding: 1rem 4rem;
+    }
+    .hcH1{
+        font-size: 3.5rem;
+    }
+    .logo{
+        width: 15rem;
+        aspect-ratio: 3/1;
+    }
+    .nav-btn{
+        width: 7rem;
+        height: 3rem;
+    }
+    #email{
+        padding-left: 1rem;
+        width: 30rem;
+        height: 4rem;
+        max-width: 30rem;
+    }
+    ::placeholder{
+        color: #c3c3c3;
+        font-size: 1.3rem;
+    }
+    .hero-btn{
+        margin-left: 1rem;
+        height: 4rem;
+        width: 16rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* SECTION 2 */
+.section-2{
+    background-color: #050505;
+    color: #ffffff;
+    height: 70vh;
+    border-bottom: 10px solid #1e1e1e;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.s2H1, .s3H1, .s4H1, .faqH1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.s2H3, .s3H3, .s4H3{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+.s2ImgCont{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.s2Img{
+    width: 75%;
+    aspect-ratio: 2/1.5;
+}
+
+@media only screen and (min-width:630px){
+    .s2Img{
+        width:60%;
+        aspect-ratio: 2/1.5;
+    }
+}
+@media only screen and (min-width:768px){
+    .s2Img{
+        width:50%;
+        aspect-ratio: 2/1.5;
+    }
+    .s2Content{
+        display: flex;
+        align-items: center;
+    }
+}
+@media only screen and (min-width:950px){
+    .section-2{
+        height: 70vh;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 4rem;
+    }
+    .s2Img{
+        width:90%;
+        aspect-ratio: 2/1.5;
+    }
+    .s2Content{
+        display: flex;
+        align-items: center;
+    }
+    .s2H1, .s3H1, .s4H1{
+        text-align: left;
+        font-size: 3.5rem;
+    }
+    .s2H3, .s3H3, .s4H3{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}
+
+/* SECTION 3 */
+.section-3{
+    background-color: #050505;
+    color: #ffffff;
+    height: 70vh;
+    border-bottom: 10px solid #1e1e1e;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.s3ImgCont{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.s3Img{
+    width: 70%;
+    aspect-ratio: 2/1.5;
+}
+@media only screen and (min-width:600px){
+    /* .s3ImgCont{
+        background-color: #e50914;
+    } */
+    .s3Img{
+        width:60%;
+        aspect-ratio: 2/1.5;
+    }
+}
+@media only screen and (min-width:768px){
+    .s3Img{
+        width:50%;
+        aspect-ratio: 2/1.5;
+    }
+    .s3Content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width:950px){
+    .section-3{
+        height: 70vh;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 4rem;
+    }
+    .s3Img{
+        width:90%;
+        aspect-ratio: 2/1.5;
+    }
+}
+
+/* SECTION 4 */
+.section-4{
+    background-color: #050505;
+    color: #ffffff;
+    height: 35vh;
+    border-bottom: 10px solid #1e1e1e;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.s4Content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dum5{
+    display: none;
+}
+@media only screen and (min-width:950px){
+    .section-4{
+        height: 55vh;
+        padding: 1rem 4rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .s4Content{
+        justify-content: left;
+    }
+    .dum5{
+        display: block;
+    }
+}
+
+/* FAQ */
+.faq{
+    background-color: #050505;
+    color: #ffffff;
+    height: auto;
+    border-bottom: 10px solid #1e1e1e;
+    padding: 1rem;
+}
+.faqContent{
+    margin-top: 1rem;
+    width: 100%;
+    height: 30rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+.faqs{
+    padding: 1rem;
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faqs:hover{
+    background-color:#434343 ;
+}
+.faqsH1{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.plus{
+    width: 1.5rem;
+}
+.faqLast{
+    margin-top: 1.5rem;
+}
+.webFormP{
+    font-size: 1.2rem;
+    text-align: center;
+}
+@media only screen and (min-width:950px){
+    .faqH1{
+        font-size: 3.5rem;
+    }
+    .faqsH1{
+        font-size: 1.5rem;
+    }
+    .faqCC{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .faqContent{
+        width: 65rem;
+        height: 40rem;
+    }
+    .faqs{
+        max-width: 65rem;
+        padding: 2rem;
+    }
+    .webFormP{
+        font-size: 1.5rem;
+    }
+    .faqLast{
+        margin-top: 2rem;
+    }
+}
+
+/* FOOTER */
+.footer{
+    background-color: #050505;
+    color: #ffffff;
+    height: 100vh;
+    border-bottom: 10px solid #1e1e1e;
+    padding: 1rem;
+}
+.footerH3{
+    font-weight: 400;
+}
+.footerLinks{
+    margin-top: 1.5rem;
+    width: 100%;
+    height:77%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: #c5c5c5
+}
+
+.ulOne{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.ulTwo{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.ulSubOne a li, .ulSubTwo a li, .ulSubThree a li, .ulSubFour a li{
+    margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width:500px){
+    .footer{
+        height: 70vh;
+    }
+    .footerLinks{
+        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr 1fr;
+        height: 70%;
+    }
+}
+@media only screen and (min-width:768px){
+    .footerLinks{
+        height: 50%;
+        width: 80%;
+        gap: 1rem;
+    }
+    .ulOne, .ulTwo{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .ulSubOne a li, .ulSubTwo a li, .ulSubThree a li, .ulSubFour a li{
+        margin-bottom: 1rem;
+    }
+}
+.locate, .nn{
+    margin-top: 1rem;
+}
+
+.location{
+    background-color: rgba(18, 18, 18, 0.516);
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border: 1px solid #707070;
+    border-radius: 4px;
+}
+.globe{
+    width:1.5rem;
+    height: 1.5rem;
+}
+.locp{
+    margin-top: 3px;
+    font-size: 1.2rem;
+}
+.fa-sort-down{
+    font-size: 1rem;
+    margin-top: -6px;
+}
+.nn{
+    font-size: 1.1rem;
+    color: #C5C5C5;
+}
+
+
+
+/* SIGNIN PAGE  */
+.siMain{
+    height: auto;
+    background-color: #050505;
+    border-bottom: 10px solid #1e1e1e;
+}
+.siLogo{
+    width: 12rem;
+    aspect-ratio: 3/1;
+}
+.signinFormContainer{
+    /* background-color: rgb(47, 0, 255); */
+    width: 100%;
+    height: 35rem;
+    padding: 1rem;
+    border-bottom: 5px solid #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signinForm{
+    width: 100%;
+    height: 100%;
+    /* background-color: #e68080; */
+    color: #ffffff;
+}
+.sfH1{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.siForm{
+    margin-top: 1.5rem;
+}
+#Email, #pass{
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    padding-left: 1rem;
+    background-color: #2e2e2e;
+    width: 100%;
+    height: 3.5rem;
+}
+.siFormButton{
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: var(--primary-red);
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    height: 3.5rem;
+}
+.si-formex{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rm{
+    display: flex;
+    align-items: center;
+}
+.rmp, .nh{
+    font-size: 1rem;
+    color: #c5c5c5;
+}
+.check{
+    width: 1.3rem;
+    height: 1.3em;
+}
+.siH3{
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #737373;
+}
+.siSpan{
+    color: #ffffff;
+}
+.siP{
+    margin-top: 1rem;
+    color: #737373;
+    font-size: 0.8rem;
+}
+.siA{
+    color: blue;
+    text-decoration: none;
+}
+.siFooter{
+    padding: 1rem;
+}
+.siFooterLinks{
+    height: 10rem;
+}
+
+
+@media only screen and (min-width:600px){
+    .signinFormContainer{
+        padding: 1rem 2rem;
+    }
+    .siFooter{
+        padding: 1rem 2rem;
+    }
+}
+@media only screen and (min-width:740px){
+    .siMain{
+        background: linear-gradient(hsla(0, 0%, 7%, 0.747), rgba(28, 28, 28, 0.71)), url(../Images/hero.jpg);
+    }
+    .signinFormContainer{
+        height: 55rem;
+    }
+    .signinForm{
+        height: 80%;
+    }
+    .signinForm{
+        border-radius: 0.5rem;
+        background-color: #111111e6;
+        width: 30rem;
+        padding: 1rem 2rem;
+    }
+    .siFooter{
+        background-color: #1e1e1ee6;
+    }
+    .siFormButton{
+        font-size: 1.5rem;
+    }
+}
+
+
+/* WHO'S WATCHING */
+.wwMain{
+    height: 100vh;
+    background-color: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.wwCont{
+    height: 80%;
+    width: 75%;
+}
+.wwH1{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+.flexDum{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wwProfiles{
+    margin-top: 2rem;
+    width: 100%;
+    height: 65%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+.subProfile1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.subProfile2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.profilesImgCont{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proImg{
+    width: 70%;
+    border-radius: 0.5rem;
+}
+.profileP{
+    color: #737373;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.wwButtonCont{
+    margin-top: 2rem;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wwButton{
+    width: 15rem;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    border: 2px solid #737373;
+    color: #737373;
+    font-size: 1rem;
+}
+
+@media only screen and (min-width:650px){
+    .wwH1{
+        font-size: 2.5rem;
+    }
+    .wwCont{
+        width: 90%;
+        padding: 2rem;
+        height: 50%;
+    }
+    .wwProfiles{
+        width: 85%;
+        height: 80%;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width:990px){
+    .wwCont{
+        margin-top: -10rem;
+        width: 70%;
+    }
+    .wwH1{
+        font-size: 3rem;
+    }
+    .flexDum{
+        height: 50%;
+    }
+    .profileP{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+    .wwButtonCont{
+        margin-top: 5rem;
+    }
+    .proImg{
+        width: 90%;
+    }
+}
+@media only screen and (min-width:1024px){
+    .wwButtonCont{
+        margin-top: 10rem;
+    }
+}
