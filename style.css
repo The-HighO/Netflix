@@ -622,7 +622,7 @@ button{
 }
 @media only screen and (min-width:740px){
     .siMain{
-        background: linear-gradient(hsla(0, 0%, 7%, 0.747), rgba(28, 28, 28, 0.71)), url(../Images/hero.jpg);
+        background: linear-gradient(hsla(0, 0%, 7%, 0.747), rgba(28, 28, 28, 0.71)), url(./Images/hero.jpg);
     }
     .signinFormContainer{
         height: 55rem;
