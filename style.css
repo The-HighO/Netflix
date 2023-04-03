@@ -21,6 +21,7 @@ input{
 }
 a{
     color: #ffffff;
+    cursor: pointer;
 }
 button{
     cursor: pointer;
