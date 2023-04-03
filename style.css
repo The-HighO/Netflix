@@ -434,7 +434,7 @@ button{
 .footer{
     background-color: #050505;
     color: #ffffff;
-    height: 100vh;
+    height: auto;
     border-bottom: 10px solid #1e1e1e;
     padding: 1rem;
 }
@@ -467,7 +467,7 @@ button{
         height: 70vh;
     }
     .footerLinks{
-        grid-template-rows: 1fr ;
+        /* grid-template-rows: 1fr ; */
         grid-template-columns: 1fr 1fr;
         height: 70%;
     }
